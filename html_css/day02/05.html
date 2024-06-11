@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function test(){
+            var ele = document.getElementById('textbox');
+            if (ele.value == '호랑이') {
+                alert('입력됨');
+            }
+            ele.value = '호랑이';
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <p>
+            <input type="text" name="" id="" value="1234"> 
+        </p>
+        <p>
+            <input type="text" name="" id="textbox" placeholder="아이디를 입력하세요.">
+        </p>
+        <p>
+            <input type="button" value="테스트" onclick="javascript:test()">
+        </p>
+    </div>
+    
+</body>
+</html>

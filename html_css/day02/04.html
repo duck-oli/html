@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            border-collapse: collapse; margin: 50px auto;
+        }
+        td, th {
+            border: 1px solid #ccc; padding: 15px 30px; text-align: center;
+        }
+        td:nth-child(1) {
+            width: 40%;
+        }
+        tr:nth-child(2) {
+            width: 60%;
+        }
+        tr:nth-child(1) {
+            background-color: #f5fafe;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <tr>
+                <th>구분</th>
+                <th>업무 처리</th>
+            </tr>
+            <tr>
+                <td rowspan="4">Frontend(Web Publisher)</td>
+                <td> Model : 웹표준 UXUI HTML5 코딩</td>
+            </tr>
+            <tr>
+                <td>View : 웹표준 UXUI CSS3 코딩</td>
+            </tr>
+            <tr>
+                <td>Controler : Javascript & jQuery</td>
+            </tr>
+            <tr>
+                <td>Response : 반응형</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <input id="input" class="truncate" type="search" autocomplete="off" spellcheck="false" role="combobox" aria-controls="matches" aria-expanded="false" aria-live="polite" placeholder="Google 검색 또는 URL 입력">
+    </div>
+</body>
+</html>
