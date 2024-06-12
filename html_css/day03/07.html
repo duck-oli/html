@@ -22,6 +22,10 @@
                 alert(ele.value);
             }
         }
+        function all() {
+            var ele = document.getElementsByName('checkbox')
+            ele.checked = true
+        }
     </script>
 </head>
 <body>
@@ -115,7 +119,7 @@
                     <h2>이용약관 동의<i>*</i></h2>
                 </li>
                 <div>
-                    <input type="checkbox" id="3">
+                    <input type="checkbox" id="3" onclick='javascript:all()'>
                     <label for="3">전체 동의합니다.</label>
                 </div>
                 <div>
@@ -123,36 +127,36 @@
                 </div>
                 <div>
                     <li>
-                        <input type="checkbox" id="01">
+                        <input type="checkbox" id="01" name='checkbox'>
                         <label for="01">이용약관<i>*</i></label>
                     </li>
                 </div>
                 <div>
                     <li>
-                        <input type="checkbox" id="02">
+                        <input type="checkbox" id="02" name='checkbox'>
                         <label for="02">개인정보 처리방침 동의<i>*</i></label>
                     </li>
                 </div>
                 <div>
                     <li>
-                        <input type="checkbox" id="03">
+                        <input type="checkbox" id="03" name='checkbox'>
                         <label for="03">개인정보 처리방침 동의</label>
                     </li>
                 </div>
                 <div>
                     <li>
-                        <input type="checkbox" id="04">
+                        <input type="checkbox" id="04" name='checkbox'>
                         <label for="04">무료배송, 할인쿠폰 등 혜택/정보 수신</label>
                     </li>
                 </div>
                 <div>
                     <ul>
                         <li>
-                            <input type="checkbox" id="001">
+                            <input type="checkbox" id="001" name='checkbox'>
                             <label for="001">SNS</label>
                         </li>
                         <li>
-                            <input type="checkbox" id='002'>
+                            <input type="checkbox" id='002' name='checkbox'>
                             <label for="002">이메일</label>
                         </li>
                     </ul>
@@ -160,7 +164,7 @@
                 </div>
                 <div>
                     <li>
-                        <input type="checkbox" id="003">
+                        <input type="checkbox" id="003" name='checkbox'>
                         <label for="003">본인은 만 14세 이상입니다.</label>
                     </li>
                 </div>
