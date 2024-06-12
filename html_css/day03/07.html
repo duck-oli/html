@@ -8,7 +8,21 @@
         .input {
             width: 200px;
         }
+        .chk_box {
+            height: 40px;
+        }
     </style>
+    <script>
+        function test(dsa) {
+            if (dsa == 1) {
+                var ele = document.getElementById('button_1');
+                alert(ele.value);
+            } else if (dsa == 2) {
+                var ele = document.getElementById('button_2');
+                alert(ele.value);
+            }
+        }
+    </script>
 </head>
 <body>
     <div>
@@ -19,17 +33,17 @@
                     <input type="text" placeholder='아이디를 입력하세요' class='input'>
                 </div>
                 <div>
-                    <input type="button" value='중복 확인'>
+                    <input type="button" value='중복 확인' id='button_1' onclick="javascript:test(1)">
                 </div>
             </div>
             <div>
                 <li>비밀번호<i>*</i></li>
-                <input type="password" name="" id="" placeholder='비밀번호를 입력하세요' class='input'>
+                <input type="password" placeholder='비밀번호를 입력하세요' class='input'>
             </div>
             <div>
                 <li>비밀번호 확인<i>*</i></li>
                 <div>
-                    <input type="password" name="" id="" placeholder='비밀번호를 한번 더 입력하세요' class='input'>
+                    <input type="password" placeholder='비밀번호를 한번 더 입력하세요' class='input'>
                 </div>
             </div>
             <div>
@@ -38,7 +52,123 @@
                     <input type="text" placeholder='이름을 입력해 주세요'>
                 </div>
             </div>
+            <div>
+                <li>이메일<i>*</i></li>
+                <div>
+                    <input type="text" placeholder='이메일을 입력해 주세요'>
+                </div>
+            </div>
+            <div>
+                <li>휴대폰<i>*</i></li>
+                <div>
+                    <input type="tel" placeholder='숫자만 입력해 주세요'>
+                    <input type="button" value="인증번호 받기" id='button_2' onclick="javascript:test(2)">
+                </div>
+            </div>
+            <div>
+                <li>주소<i>*</i></li>
+                <div>
+                    <input type="text" placeholder='도로명, 지번, 건물명'>
+                </div>
+            </div>
+            <div>
+                <li>생년월일<i>*</i></li>
+                <div><input type="date" value='2024-06-12'></div>
+            </div>
+            <div>
+                <li>
+                    <h2>성별</h2>
+                </li>
+                <div class='chk_box'>
+                    <input type="radio" name="chk_1" id="male">
+                    <label for="male">남성</label>
+                </div>
+                <div class='chk_box'>
+                    <input type="radio" name="chk_1" id="female">
+                    <label for="female">여성</label>
+                </div>
+                <div>
+                    <input type="radio" name="chk_1" id="none">
+                    <label for="none">선택안함</label>
+                </div>
+            </div>
+            <div>
+                <li>
+                    <h2>추가입력 사항</h2>
+                </li>
+                <div>
+                    <h3>
+                        추천인 아이디와 참여 이벤트명 중 하나만 선택 가능합니다.
+                    </h3>
+                </div>
+                <div class='chk_box'>
+                    <input type="radio" name="chk_2" id="1">
+                    <label for="1">추천인 아이디</label>
+                </div>
+                <div>
+                    <input type="radio" name="chk_2" id="2">
+                    <label for="2">참여 이벤트명</label>
+                </div>
+            </div>
+            <div>
+                <li>
+                    <h2>이용약관 동의<i>*</i></h2>
+                </li>
+                <div>
+                    <input type="checkbox" id="3">
+                    <label for="3">전체 동의합니다.</label>
+                </div>
+                <div>
+                    <h3>선택 항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</h3>
+                </div>
+                <div>
+                    <li>
+                        <input type="checkbox" id="01">
+                        <label for="01">이용약관<i>*</i></label>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <input type="checkbox" id="02">
+                        <label for="02">개인정보 처리방침 동의<i>*</i></label>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <input type="checkbox" id="03">
+                        <label for="03">개인정보 처리방침 동의</label>
+                    </li>
+                </div>
+                <div>
+                    <li>
+                        <input type="checkbox" id="04">
+                        <label for="04">무료배송, 할인쿠폰 등 혜택/정보 수신</label>
+                    </li>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <input type="checkbox" id="001">
+                            <label for="001">SNS</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" id='002'>
+                            <label for="002">이메일</label>
+                        </li>
+                    </ul>
+                    <img src="../예제/img/bnr_join_benefit_v3.svg" alt="">
+                </div>
+                <div>
+                    <li>
+                        <input type="checkbox" id="003">
+                        <label for="003">본인은 만 14세 이상입니다.</label>
+                    </li>
+                </div>
+            </div>
         </ul>
+        <div>
+            <button>가입하기</button>
+        </div>
     </div>
 </body>
 </html>
