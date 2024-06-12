@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .circle {
+            list-style: circle;
+        }
+        .disc {
+            list-style: disc;
+        }
+        .square {
+            list-style: square;
+        }
+        .none {
+            list-style: none;
+        }
+        .image {
+            list-style-image: url(../예제/img/btn_more.gif);
+        }
+        .outside {
+            list-style-position: outside;
+        }
+        .inside {
+            list-style-position: inside;
+        }
+        .upper-roman {
+            list-style-type: upper-roman;
+        }
+        .lower-roman {
+            list-style-type: lower-roman;
+        }
+        .upper-alpha {
+            list-style-type: upper-alpha;
+        }
+        .lower-alpha {
+            list-style-type: lower-alpha;
+        }
+        .decimal {
+            list-style-type: decimal;
+        }
+        .decimal-leading-zero {
+            list-style-type: decimal-leading-zero;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>스파게티</li>
+            <li>피자</li>
+            <li>커피</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul class="circle">
+            <li>스파게티</li>
+            <li>피자</li>
+            <li>커피</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul class="disc">
+            <li>스파게티</li>
+            <li>피자</li>
+            <li>커피</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul class="square">
+            <li>스파게티</li>
+            <li>피자</li>
+            <li>커피</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul class="none">
+            <li>스파게티</li>
+            <li>피자</li>
+            <li>커피</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul class="image">
+            <li>스파게티</li>
+            <li>피자</li>-
+            <li>커피</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul class="outside">
+            <li>스파게티</li>
+            <li>피자</li>
+            <li>커피</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul class="inside">
+            <li>스파게티</li>
+            <li>피자</li>
+            <li>커피</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul>
+            <li>커피</li>
+            <li>토마토 스파게티
+                <ul>
+                    <li>치즈 토마토 스파게티</li>
+                    <li>핫소스 토마토 스파게티</li>
+                </ul>
+            </li>
+            <li>피자</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul style="line-height:100%">
+            <li>홍게</li>
+            <li>킹크랩</li>
+            <li>랍스타</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul style="line-height:200%">
+            <li>홍게</li>
+            <li>킹크랩</li>
+            <li>랍스타</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <ul>
+            <li>
+                <a href="#">메인메뉴1
+                    <ul>
+                        <li><a href="#">서브메뉴1</a></li>
+                        <li><a href="#">서브메뉴2</a></li>
+                        <li><a href="#">서브메뉴3</a></li>
+                    </ul>
+                </a>
+            </li>
+            <li>
+                <a href="#">메인메뉴2</a>
+                <ul>
+                    <li><a href="#">서브메뉴1</a></li>
+                    <li><a href="#">서브메뉴2</a></li>
+                    <li><a href="#">서브메뉴3</a></li>
+                </ul>
+            </li>
+        </ul>
+        <li><a href="#">메인메뉴3</a></li>
+        <li><a href="#">메인메뉴4</a></li>
+    </div>
+    <hr>
+    <div>
+        <ol>
+            <li>웹디자이너</li>
+            <li>웹버블리셔</li>
+            <li>프론트앤드</li>
+            <li>백앤드</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <ol start="10">
+            <li>웹디자이너</li>
+            <li>웹퍼블리셔</li>
+            <li>프론트앤드</li>
+            <li>백앤드</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <ol class="upper-roman">
+            <li>웹디자이너</li>
+            <li>웹퍼블리셔</li>
+            <li>프론트앤드</li>
+            <li>백앤드</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <ol class="lower-roman">
+            <li>웹디자이너</li>
+            <li>웹퍼블리셔</li>
+            <li>프론트앤드</li>
+            <li>백앤드</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <ol class="upper-alpha">
+            <li>웹디자이너</li>
+            <li>웹퍼블리셔</li>
+            <li>프론트앤드</li>
+            <li>백앤드</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <ol class="lower-alpha">
+            <li>웹디자이너</li>
+            <li>웹퍼블리셔</li>
+            <li>프론트앤드</li>
+            <li>백앤드</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <ol class="decmal">
+            <li>웹디자이너</li>
+            <li>웹퍼블리셔</li>
+            <li>프론트앤드</li>
+            <li>백앤드</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <ol class="decimal-leading-zero">
+            <li>웹디자이너</li>
+            <li>웹퍼블리셔</li>
+            <li>프론트앤드</li>
+            <li>백앤드</li>
+        </ol>
+    </div>
+    <hr>
+    <div>
+        <dl>
+            <dt>음료</dt>
+            <dd>캬라멜 마끼아또</dd>
+            <dd>딸기 요거트</dd>
+            <dt>디저트</dt>
+            <dd>이벤트 샌드위치</dd>
+            <dd>케잌</dd>
+            <dd>하루과일</dd>
+        </dl>
+    </div>
+    <hr>
+    <div>
+        <dl>
+            <dt>음료</dt>
+            <dd>캬라멜 마끼아또</dd>
+            <dd>딸기 요거트</dd>
+            <dt>디저트</dt>
+            <dd>이벤트 샌드위치</dd>
+            <dd>케잌</dd>
+            <dd>하루과일</dd>
+            <dt>따듯한 음료
+                <dl>
+                    <dt>돌체</dt>
+                    <dd>오늘의 커피</dd>
+                    <dd>사바나</dd>
+                </dl>
+            </dt>
+            <dd>바나나</dd>
+            <dd>딸기 쥬스</dd>
+        </dl>
+    </div>
+</body>
+</html>
