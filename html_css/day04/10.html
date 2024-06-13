@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 40px;
+            text-align: center;
+        }
+        div p {
+            font-size: 16px;
+            display: inline-block;
+        }
+        .test:hover > p {
+            margin: 0px;
+            font-size: 40px;
+            color: red;
+            transition: color 0.5s;
+        }
+        .test p {
+            font-size: 16px;
+            transition: all 0.5s;
+        }
+</style>
+</head>
+<body>
+    <div>
+        <div class='test'>
+            <p lang='en'>미국</p>
+        </div>
+        <div class='test'>
+            <p lang='uk'>영국</p>
+        </div>
+        <div class='test'>
+            <p lang='ko'>대한민국</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul {
+            list-style: circle;
+        }
+        ul li {
+            line-height: 30px;
+        }
+        ul li:empty:after {
+        content: '빈칸 입니다';
+        color: #c00;
+        background: #eee;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>엔세 아이티</li>
+            <li>메가 스터디</li>
+            <li>김영 편짐 전문 학원</li>
+            <li></li>
+            <li>프론트앤드 / 백앤드 문선종</li>
+        </ul>
+    </div>
+</body>
+</html>
