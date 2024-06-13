@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            text-align: center;
+        }
+        fieldset {
+            margin: 20px auto;
+            padding: 15px 40px 20px 40px; 
+            display: inline; 
+            border: 1px solid #29c;
+        }
+        legend {
+            font-size: 16px;
+            color: #333;
+            text-align: center;
+            padding-right: 20px;
+            letter-spacing: 1px;
+        }
+        input:nth-of-type(4) {
+            margin-left: 20px;
+        }
+        input:default + label {
+            color: #333;
+        }
+        input:checked + label {
+            color: #02f;
+        }
+        .input3 input:enabled + label {
+            color: #0c0;
+        }
+        .input3 input:disabled + label {
+            color: #bbb;
+        }
+        input:hover + label {
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <from>
+            <div>
+                <fieldset class="input1">
+                    <legend>[예제1] DEFAULT</legend>
+                    <input type="checkbox" name="" id="chek01">
+                    <label for="chek01">아이디 저장</label>
+                    <input type="checkbox" name="" id="chek02">
+                    <label for="chek02">자동 로그인</label>
+                    <input type="checkbox" name="" id="chek03">
+                    <label for="chek03">보안 접속</label>
+                    <input type="radio" name="rodio1" id="radio01">
+                    <label for="radio01">여행</label>
+                    <input type="radio" name="rodio1" id="radio02">
+                    <label for="radio02">운동</label>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset class="input2">
+                    <legend>[예제2] DEFAULT & CHECKBOX</legend>
+                    <input type="checkbox" name="" id="chek04">
+                    <label for="chek04">아이디 저장</label>
+                    <input type="checkbox" name="" id="chek05">
+                    <label for="chek05">자동 로그인</label>
+                    <input type="checkbox" name="" id="chek06">
+                    <label for="chek06">보안 접속</label>
+                    <input type="radio" name="rodio2" id="radio03">
+                    <label for="radio03">여행</label>
+                    <input type="radio" name="rodio2" id="radio04">
+                    <label for="radio04">운동</label>
+                </fieldset>
+            </div>
+            <br>
+            <div>
+                <fieldset class="input3">
+                    <legend>[예제3] ENABELD DISABLED</legend>
+                    <input type="checkbox" name="" id="chek07">
+                    <label for="chek07">아이디 저장</label>
+                    <input type="checkbox" name="" id="chek08">
+                    <label for="chek08">자동 로그인</label>
+                    <input type="checkbox" name="" id="chek09">
+                    <label for="chek09">보안 접속</label>
+                    <input type="radio" name="rodio3" id="radio05">
+                    <label for="radio05">여행</label>
+                    <input type="radio" name="rodio3" id="radio06" disabled>
+                    <label for="radio06">운동</label>
+                </fieldset>
+            </div>
+        </from>
+    </div>
+</body>
+</html>
