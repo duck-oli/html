@@ -4,8 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+        }
+        .main {
+            position: relative;
+            display: inline-block;
+            width: 250px;
+            height: 130px;
+            margin: 30px auto;
+        }
+        .menu {
+            position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			border-radius: 10px;
+			background-color: #ccc;
+			box-shadow: inset 2px 5px 5px #999;
+        }
+        .menu span:hover, .menu div:hover .butten_4:before {
+            background-color: #ffffff;
+            box-shadow: 4px 4px 4px #777;
+            transition: .2s;
+        }
+        .menu input:checked + span, .menu input:checked + div .butten_4:before, .menu input:checked + div .butten_4 {
+            background-color: #555;
+            box-shadow: 4px 4px 4px #777;
+            transition: .4s;
+        }
+        .menu label span, .menu label span:before {
+            position: absolute;
+			content: "";
+            cursor: pointer;
+            background-color: #fff;
+			box-shadow: 2px 2px 2px #77777775;
+			border-radius: 10px;
+			transition: .5s;
+        }
+        .menu .butten_1 {
+			height: 110px;
+			width: 50px;
+			left: 10px;
+			bottom: 10px;
+        }
+        .menu .butten_2 {
+			height: 50px;
+			width: 50px;
+			left: 70px;
+			bottom: 70px;
+        }
+        .menu .butten_3 {
+			height: 50px;
+			width: 110px;
+			left: 70px;
+			bottom: 10px;
+        }
+        .menu .butten_4 {
+			height: 50px;
+			width: 110px;
+			left: 130px;
+			bottom: 70px;
+        }
+        .menu .butten_4:before {
+			height: 110px;
+			width: 50px;
+			left: 60px;
+			bottom: -60px;
+        }
+    </style>
 </head>
 <body>
-    div>ls
+    <div class="main">
+        <div class="menu">
+            <label>
+                <input type="checkbox" hidden>
+                <span class="butten_1"></span>
+            </label>
+
+            <label>
+                <input type="checkbox" hidden>
+                <span class="butten_2"></span>
+            </label>
+
+            <label>
+                <input type="checkbox" hidden>
+                <span class="butten_3"></span>
+            </label>
+
+            <label>
+                <input type="checkbox" hidden>
+                <div>
+                    <span class="butten_4"></span>
+                </div>
+            </label>
+        </div>
+    </div>
 </body>
 </html>
