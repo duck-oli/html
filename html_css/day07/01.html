@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {margin: 0; padding: 0;}
+        body {font-family: sans-serif;}
+        li {list-style: none;}
+        a {text-decoration: none;}
+        img {border: 0;}
+        input { display: none;}
+    </style>
+
+    <!-- 메인 헤더 -->
+    <style>
+        .header {
+            width: 960px;
+            height: 150px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /* 제목 */
+        .header .title {
+            position: absolute;
+            left: 10px;
+            top: 30px;
+        }
+
+        /* 메뉴 1 */
+        .header .gnb {
+            position: absolute;
+            overflow: hidden;
+            right: 0;
+            top: 0;
+        }
+
+        .header .gnb li {
+            float: left;
+            padding: 3px 10px;
+            border: 1px solid black;
+        }
+        
+        .header .gnb li:first-child {
+            border-radius: 30px 0 0 30px;
+        }
+
+        .header .gnb li:last-child {
+            border-radius: 0 30px 30px 0;
+        }
+
+        .header .gnb li:hover, .gnb li:hover a {
+            background-color: black;
+            color: white;
+        }
+
+        /* 메뉴 2 */
+        .header .lnb {
+            position: absolute;
+            overflow: hidden;
+            right: 0;
+            bottom: 0;
+        }
+
+        .header .lnb li {
+            float: left;
+            padding: 5px 20px;
+            border: 1px solid black;
+        }
+
+        .header .lnb li:hover, .lnb li:hover a {
+            background-color: black;
+            color: white;
+        }
+
+        .header .lnb li:first-child {
+            border-radius: 30px 0 0 30px;
+        }
+
+        .header .lnb li:last-child {
+            border-radius: 0 30px 30px 0;
+        }
+    </style>
+    <!-- 본문 -->
+    <style>
+        .content {
+            width: 960px;
+            margin: 0 auto;
+            overflow: hidden;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* 내용 */
+        .content .section {
+            width: 750px;
+            float: left;
+        }
+        
+        .content .section article {
+            border: 1px solid black;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        /* 사이드 바 */
+        .content .aside {
+            width: 200px;
+            float: right;
+        }
+
+        .content .aside .buttons {
+            overflow: hidden;
+        }
+
+        .content .aside .buttons label p {
+            float: left;
+            width: 100px;
+            height: 30px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            text-align: center;
+            margin-top: 6px;
+            padding-top: 3px;
+        }
+
+        .content .aside .buttons label p:hover {
+            cursor: pointer;
+        }
+
+        .content .aside #html:checked ~ .buttons > label:nth-child(1) p {
+            background-color: black;
+            color: white;
+        }
+
+        .content .aside #html:checked ~ .items > .html_tab {
+            display: block;
+        }
+
+        .content .aside #html ~ .items > .html_tab {
+            display: none;
+        }
+
+        .content .aside #css:checked ~ .buttons > label:nth-child(2) p {
+            background-color: black;
+            color: white;
+        }
+
+        .content .aside #css:checked ~ .items > .css_tab {
+            display: block;
+        }
+
+        .content .aside #css ~ .items > .css_tab {
+            display: none;
+        }
+
+        .content .aside .items {
+            overflow: hidden;
+        }
+
+        .content .aside .items .item {
+            width: 200px;
+            height: 60px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .content .aside .items .item .thumbnail {
+            position: absolute;
+            left: 10px;
+            top: 7px;
+        }
+
+        .content .aside .items .item .description {
+            margin-left: 60px;
+            margin-top: 7px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            overflow: hidden;
+        }
+
+    </style>
+
+    <!-- 푸터 -->
+    <style>
+        .footer {
+            width: 960px;
+            margin: 0 auto;
+            border: 1px solid black;
+            text-align: center;
+            box-sizing: border-box;
+            padding: 10px 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">
+            <h1>Rint Develoment</h1>
+            <h2>HTML + CSS3 Basic</h2>
+        </div>
+
+        <div class="gnb">
+            <ul>
+                <li><a href="#">Web</a></li>
+                <li><a href="#">Mobile</a></li>
+                <li><a href="#">Game</a></li>
+                <li><a href="#">Simulation</a></li>
+                <li><a href="#">Data</a></li>
+            </ul>
+        </div>
+
+        <div class="lnb">
+            <ul>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">JQuery</a></li>
+                <li><a href="#">Node.js</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="section">
+            <article>
+                <h4>Main Article</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+            </article>
+
+            <article>
+                <h4>Main Article</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+            </article>
+
+            <article>
+                <h4>Main Article</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur in magna libero. Sed nec pharetra nunc. Proin eget magna id ipsum eleifend cursus sit amet nec lectus. Nunc quis lacus magna. Aliquam blandit, sapien ut viverra fermentum, elit tortor ornare nisi, in luctus sem massa pulvinar turpis. Cras tincidunt dictum urna ut ultricies. Nullam diam nibh, pellentesque non laoreet ut, bibendum nec mauris. Maecenas pulvinar porttitor laoreet. Vivamus bibendum purus nisl, eget aliquam lectus. Maecenas justo libero, euismod sit amet suscipit eu, vulputate eget neque. Aliquam quam est, blandit nec iaculis non, suscipit vel nunc. Proin et odio aliquam erat pharetra accumsan et quis neque. Vivamus interdum accumsan leo eu adipiscing. Integer accumsan elit non turpis faucibus porttitor. Aliquam scelerisque nisi et turpis pretium at ultricies turpis pharetra.</p>
+            </article>
+        </div>
+        <div class="aside">
+            <input type="radio" name="aside" id="html" checked>
+            <input type="radio" name="aside" id="css">
+            <div class="buttons">
+                <label for="html"><p>HTML</p></label>
+                <label for="css"><p>CSS</p></label>
+            </div>
+            <div class="items">
+                <div class="html_tab">
+                    <ul>
+                        <li class="item">
+                            <div class="description">
+                                <a href="#">
+                                    <strong>HTML5 Canvas</strong>
+                                    <p>2012-03-15</p>
+                                </a>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" alt="img">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="description">
+                                <a href="#">
+                                    <strong>HTML5 Audio</strong>
+                                    <p>2012-03-15</p>
+                                </a>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" alt="img">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="description">
+                                <a href="#">
+                                    <strong>HTML5 Video</strong>
+                                    <p>2012-03-15</p>
+                                </a>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" alt="img">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="description">
+                                <a href="#">
+                                    <strong>HTML5 Semantic Web</strong>
+                                    <p>2012-03-15</p>
+                                </a>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" alt="img">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="css_tab">
+                    <ul>
+                        <li class="item">
+                            <div class="description">
+                                <a href="#">
+                                    <strong>CSS3 Transition</strong>
+                                    <p>2012-03-15</p>
+                                </a>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" alt="img">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="description">
+                                <a href="#">
+                                    <strong>CSS3 Animation</strong>
+                                    <p>2012-03-15</p>
+                                </a>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" alt="img">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="description">
+                                <a href="#">
+                                    <strong>CSS3 Border</strong>
+                                    <p>2012-03-15</p>
+                                </a>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" alt="img">
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="description">
+                                <a href="#">
+                                    <strong>CSS3 Box</strong>
+                                    <p>2012-03-15</p>
+                                </a>
+                            </div>
+                            <div class="thumbnail">
+                                <img src="http://placehold.it/45x45" alt="img">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <h3>연세IT미래교육원</h3>
+        <address>수원시 장안구 영화동</address>
+    </div>
+</body>
+</html>

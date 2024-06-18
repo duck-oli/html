@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        ul {list-style: none;}
+
+        .screen {
+            text-align: center;
+            margin: 0 auto;
+            width: 960px;
+            height: 100px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 24px;
+        }
+
+        .table {
+            margin: 0 auto;
+            width: 960px;
+            height: 670px;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .table ul li {
+            float: left;
+            width: 110px;
+            height: 110px;
+            padding: 39px;
+            font-size: 20px;
+            margin-top: 10px;
+            margin-left: 8.5px;
+            box-sizing: border-box;
+        }
+
+        .a li, .c li {
+            margin-bottom: 90px;
+        }
+
+        .ls {
+            border: 1px solid black;
+        }
+
+        .table label li:hover {
+            background-color: #bbb;
+            transition: .2s;
+        }
+
+
+        .table label > input:checked + li {
+            background-color: #444;
+            transition: .1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="screen">
+            <h1>Screen</h1>
+        </div>
+        <div class="table">
+            <ul class="a">
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">a1</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">a2</li>
+                </label>
+                <li class="none"></li>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">a3</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">a4</li>
+                </label>
+                <li class="none"></li>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">a5</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">a6</li>
+                </label>
+            </ul>
+            <ul class="b">
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">b1</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">b2</li>
+                </label>
+                <li class="none"></li>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">b3</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">b4</li>
+                </label>
+                <li class="none"></li>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">b5</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">b6</li>
+                </label>
+            </ul>
+            <ul class="c">
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">c1</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">c2</li>
+                </label>
+                <li class="none"></li>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">c3</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">c4</li>
+                </label>
+                <li class="none"></li>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">c5</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">c6</li>
+                </label>
+            </ul>
+            <ul class="d">
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">d1</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">d2</li>
+                </label>
+                <li class="none"></li>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">d3</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">d4</li>
+                </label>
+                <li class="none"></li>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">d5</li>
+                </label>
+                <label>
+                    <input type="checkbox" hidden>
+                    <li class="ls">d6</li>
+                </label>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
