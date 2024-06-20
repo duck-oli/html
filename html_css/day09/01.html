@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-width: 910px;
+        }
+        ul {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+    </style>
+
+    <!-- 헤더 -->
+    <style>
+        .header {
+            height: 100px;
+            background-color: blue;
+            position: relative;
+        }
+        .title {
+            position: absolute;
+            color: white;
+            top: 10px;
+            left: 20px;
+        }
+        .header_gnb{
+            overflow: hidden;
+            position: relative;
+            top: 62px;
+            box-sizing: border-box;
+            background-color: aqua;
+        }
+        .header_gnb .ul1 {
+            float: left;
+            overflow:hidden;
+        }
+        .header_gnb .ul1 li {
+            float: left;
+            font-weight: bold;
+            padding: 10px 32px 10px;
+        }
+        .header_gnb .ul2 {
+            float: right;
+            overflow: hidden;
+        }
+        .header_gnb .ul2 li {
+            float:right;
+            font-weight: bold;
+            padding: 10px 32px 10px;
+        }
+        .header_gnb li:hover {
+            background-color: aquamarine;
+            cursor: pointer;
+        }
+        .header_gnb li:before {
+            display: block;
+            content:'';
+            position: absolute;
+            top: 9px;
+            width: 81px;
+            height: 23px;
+            border-right: 1px solid black;
+        }
+    </style>
+    <!-- 내용 -->
+    <style>
+        .content {
+            overflow: hidden;
+            padding-right: 200px;
+            background-color: lightpink;
+        }
+        .content .aside {
+            float: left;
+            box-sizing: border-box;
+            background-color: bisque;
+            width: 200px;
+            height: 300px; 
+        }
+        .content .aside li {
+            padding: 10px 10px 10px 10px;
+            border: 1px solid #ccc;
+        }
+        .content .aside li:hover {
+            cursor: pointer;
+            background-color: mediumslateblue;
+        }
+        .content .section {
+            float: left;
+            width: 100%;
+            margin-right: -200px;
+            
+        }
+    </style>
+    <!-- 푸터 -->
+    <style>
+        .footer {
+            text-align: center;
+            border: 1px solid black;
+            box-sizing: border-box;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Fluid
+                </h1>
+            </div>
+            <div class="header_gnb">
+                <ul class='ul1'>
+                    <li>button</li>
+                    <li>button</li>
+                    <li>button</li>
+                    <li>button</li>
+                    <li>button</li>
+                    <li>button</li>
+                </ul>
+                <ul class='ul2'>
+                    <li>button</li>
+                    <li>button</li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="aside">
+                <ul>
+                    <li>button</li>
+                    <li>button</li>
+                    <li>button</li>
+                    <li>button</li>
+                    <li>button</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem eum minima explicabo quae non nulla autem vitae minus perferendis rem. Doloribus, dignissimos sit illo ab sequi possimus dicta ipsum accusantium!</p>
+                <h2>lorem</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem eum minima explicabo quae non nulla autem vitae minus perferendis rem. Doloribus, dignissimos sit illo ab sequi possimus dicta ipsum accusantium!</p>
+            </div>
+        </div>
+        <div class="footer">
+            <h3>footer</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+    </div>
+</body>
+</html>
