@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen and (max-width: 959px) {
+            .container {
+                display: grid;
+                grid-template-columns: 50% 50%;
+                grid-template-rows: auto auto auto;
+                gap: 5px;
+            }
+            .grid-col-1_1 {
+                grid-column: 1 / 1;
+                background-color: black;
+            }
+            .grid-col-1_2 {
+                grid-column: 1 / 2;
+                background-color: black;
+            }
+            .grid-col-2_1 {
+                grid-column: 2 / 1;
+            }
+            .grid-col-2_2 {
+                grid-column: 2 / 2;
+            }
+            .row {
+                width: 100%;
+            }
+        }
+        .float-left {
+            float: left;
+        }
+    </style>    
+    
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="grid-col-1_2">sdasd</div>
+            <img src="http://placehold.it/340x250" alt="" class="grid-col-1_2">
+        </div>
+    </div>
+</body>
+</html>
